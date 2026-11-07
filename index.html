@@ -1,38 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SMK Medina Bandung</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f0f4f8;
-            text-align: center;
-        }
-
-        header {
-            background: #1565c0;
-            color: white;
-            padding: 30px;
-        }
-
-        main {
-            padding: 40px 20px;
-        }
-
-        button {
-            background: #1565c0;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -44,12 +18,29 @@
 
     <main>
         <h2>Selamat Datang!</h2>
-        <p>Website pertama saya menggunakan GitHub.</p>
 
-        <button onclick="alert('Halo, selamat belajar GitHub!')">
+        <p>
+            Ini adalah website pertama saya
+            menggunakan GitHub.
+        </p>
+
+        <button onclick="salam()">
             Klik Saya
         </button>
+
+        <hr>
+
+        <h3>Waktu Sekarang</h3>
+
+        <p id="waktu">Klik tombol untuk melihat waktu</p>
+
+        <button onclick="tampilkanWaktu()">
+            Tampilkan Waktu
+        </button>
+
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
